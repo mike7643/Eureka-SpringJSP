@@ -15,7 +15,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1>viewTest3</h1>
+<h1>viewTest4</h1>
 <h4> seq : <%= seq %></h4>
 <h1> CarDto</h1>
 <h4> <%=carDto.getName()%></h4>

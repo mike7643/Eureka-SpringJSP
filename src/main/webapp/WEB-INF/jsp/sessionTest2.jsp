@@ -14,7 +14,7 @@
     <title>Title</title>
 </head>
 <body>
-<h1>sessionTest1.jsp</h1>
+<h1>sessionTest2.jsp</h1>
 <%
     if (username == null) {
 

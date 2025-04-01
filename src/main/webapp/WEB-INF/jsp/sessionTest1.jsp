@@ -7,19 +7,26 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String seq = (String) request.getAttribute("seq");
-    CarDto carDto = (CarDto) request.getAttribute("carDto");
+    String username = (String) session.getAttribute("username");
 %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-<h1>viewTest4</h1>
-<h4> seq : <%= seq %></h4>
-<h1> CarDto</h1>
-<h4> <%=carDto.getName()%></h4>
-<h4> <%=carDto.getPrice()%></h4>
-<h4> <%=carDto.getOwner()%></h4>
+<h1>sessionTest1.jsp</h1>
+<%
+    if (username == null) {
+
+%>
+<h4>로그인 되어 있지 않습니다.</h4>
+
+<%
+    }else {
+%>
+<h4><%=username%> 이 로그인 되어 있습니다.</h4>
+<%
+        }
+%>
 </body>
 </html>
